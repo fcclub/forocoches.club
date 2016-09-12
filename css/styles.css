@@ -1,0 +1,137 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fff;
+  background: #000;
+  margin: 0;
+  height: 100%
+}
+
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.counter{
+  margin: auto;
+}
+
+.cent{
+	margin: auto;
+	width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    text-align: center;
+}
+
+.time{
+  display: block;
+  padding: 20px;
+  background-image: url("../img/shurperro.png");
+  background-position: 14px 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 80px;
+}
+
+.days, .hours, .minutes, .seconds{
+  display: inline-block;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid white;
+  min-width: 82px;
+  text-align: center;
+  position: relative;
+}
+
+.time label{
+  margin-top: 8px;
+  display: block;
+  position: absolute;
+  font-size: 13px;
+  top: 78px;
+  width: 100%;
+  left: 0
+}
+
+h1{
+	padding-top:20px;
+  font-size: 100px;
+  line-height: 120px;
+  text-shadow: 2px 2px #000;
+}
+
+.time{
+	font-size: 45px;
+}
+
+@media(max-width: 600px){
+	.time{
+		font-size: 25px;
+		text-align: center;
+    background-position: 9px -1px;
+	}
+
+  h1{
+  padding-top:20px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .time label {
+    top: 48px;
+  }
+
+  .days, .hours, .minutes, .seconds {
+    margin-bottom: 20px;
+    min-width: 67px
+  }
+	.share{
+		padding: 4px !important;
+    margin-top: 11px !important;
+	}
+
+	.share li{
+		margin: 5px !important;
+	}
+}
+
+.share {
+  display: block
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 48px; // IE8
+  padding: 4.8rem;
+  text-align: center;
+}
+.share li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 12px; // IE8
+    margin: 1.;
+ }
+
+.share img{
+    position: relative
+    height: 46px;
+    width: 46px; 
+}
+
+ .share img:hover{
+  transform: scale(1.2);
+  transition: background-color .3s, transform .3s ease-out;
+ }
+
+
+
+

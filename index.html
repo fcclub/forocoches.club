@@ -1,57 +1,111 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Forocoches.club by fcclub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Forocoches.club</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/fcclub/forocoches.club" class="btn">View on GitHub</a>
-      <a href="https://github.com/fcclub/forocoches.club/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/fcclub/forocoches.club/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<!doctype html>
+<!--
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+dddddddddNMmdddddddddddddddddddddddhhddddsdddh/                  .:s-.ydddh/ `/ddh.   yh+ `dm-      
+ddy/dddddNMmdddddddddddddddddddddddddddddyo::`                  `--`   .-/`  -::o- `-+::: -dm-      
+ho` hddddNMmddddddddddddddddh+oddds-.hhs/`    `            ``     .--     `--s`  ./`/-    odm-    ` 
+-.  sddddNMmddddddddddddddddhyh//dhyy.`                           ..`-.   ``s/` `+o+h`  `:ddm     .`
+    +ydddmMmdddddddddddddddddddsydds.            ..                         `-`   +dh`   `ddm-     `
+    /odddmMmdddddddddddddddddddddy-  `:+-         ```.-:++++/.`..  .--:::/+`    `.yhh  -:odmms      
+    /ddddNMmddddddddddddy:dyddd+.`./yhy.      ./:--./ssoo/-`.` ...---:hdddyhy+  .s-`.`hhdhdmmd.  :y+
+    /ddddNMmddddddddddddo.mh:/h+`/hdh/`   `.-//+//+o/:/:....`.`.`..-/oddyhhddy-  `   -doh`ommd:o/ddh
+    /ddddmMmddddddddddddo/mdsodshddy. `:+syhdhhdddddysssss+:+osyysyhdddsydyodmy`   ` /ddy smdh+y+ddd
+    -hdddmMmddddddddddddddmdddhhdh++`/sddhody+ydddddddddysso:-.-shhdds:dho: -hm+ `-:/ydd: omyhdddddd
+    -sdddmMmddddddddddddddMdh/-yhyhoyddddhhyhddddddddddhhy+.-/+yyyhdo-sdh:-..smh:+hhhdss/-hmmddddddd
+    -ydddmMmddddddddddddddNdho:hddyddddhddddddddddmmdddddddhhdy--//o-ydhhs+/:/hy:ydddo` `:dmmddddddd
+    -ddddmMmddddddddddddddddd/odddydddddddddddddmmNNNddddddddd.`  `-yss--:/:::hdyhdds`   odmmddddddd
+    .ddddmMmdddddddddddddddhy`yddddddddmNmmdmNNNMNNNNNmdddddho+o` .ys+:-.-//:+ddddddo  :ohdNmddddddd
+    `ddddmMmdddddddddddddddo:.hdhhddddmMMNdNMNNmMMMMMMNdddddhhhdyoso.```:+-:-sddmmdds.sddsdNmddddddd
+     ddddmMmddddddddddddddd: `/yhdddddmMMmdNNNNNMMMMNNmddddddddddys/:-::+/+o:dmNMMmd/odddhdNmddddddd
+     ddddmMmdddddddddddhs:.      ./yyddmmddddmmNMNNNmNmmddddddddds.` :-:+ohddNMMMmh: oddh+dNmddddddd
+     ddddmMmddddddddddo.          `+ydmNmddddmNNNNmNNmmdddddddddy:-/.sdNNMMMMMNNds--/ydds dNdddddddd
+     ddddmMmddddddddd+              dmNmNddddddddddhhhhddddddddd-  .hdddddddmNddd/:hdydds:dNmddddddd
+     ddddmMmddddddddh`              hNm+hddddddddddh/.-/hddmmdd+:`ohmdyoydhddddhhhdddyhhhddNmddddddd
+     ddddmMmddddddddo              `mdd.odddyoshhdmmmmdmydhoydd   dddhssddsdsdy` odddho`.smMmddddddd
+     ddddmMmdddddddd/              /mydsddddo`:.-:syysyo/-` .h-   h///dNNmd/-y` -sddd.`-.smMmddddddd
+     ddddNMmdddddddd-             `ddhddddddo`   `.``/+o/   `- `  oh/yoydds +h-sddddd:odddNMmddddddm
+     ddddNMmdddddddd`      -/.  `:hmddddddddh-    .:/:+:     `o:  :dhhddhs -hddddyyddddddoNMmddddddN
+     ddddmMmdddddddd`      yhsddmNNddmdddddddh/`          `-osd/   hy:+///os:ydddddoohddddNMmddddddM
+     ddddmMmdddddddd-      od-sdddhdNNdddddddddhh:     .+yy:hdh/   /s:  :oh. +ddds:  sdddoNMmdddddmM
+     ddddmMmdddddddd/      -myyss/:dmMmdddddddddddho/oyshdy.-od/   . . ydds.`:ooo. :/syhd.NMmdmdddmM
+     ddddmMNddddddyo:         `-:/od+dNdddddddddddddddddssdNNNdh:+/hhyyddy/m/..`./++:--.`.ohmdmdddNM
+     ddddNMNddys+---y`       .ssomhh.-dmdddddddddddddddddy/+ymNmmdddddhddmhmhd/-...://++++:.`:ymddmM
+     ddddmdyo-`.-:/++/`-        `y::y`.dNmddddddddddddddddyhsyddddddddddhmNNs++syyo++///:.-/+/-.+hmM
+     dddo.:::oho:::-:oo    `..// .-/ys`.yNMmdddddddmNMNmmmsydhddddddddddmmNNh/.``.:///++sys/-`-//-oN
+     h+//o-.--`-+yhhhs`    :y+.    `-o: `/mMmdNmddddddmNNdmmNMNmshNNmdddmMm/`            `:syh+-.+/:
+  `..::---+yyhhhh+-`/-   `o+`         `  ..sNNNMmdddddddddsoyhhd:`odddh.odh`                `.+os::o
+ .-:::/ooo/-...``  `-   ./.           `::.- :mNMMddddddddddhdddmm. +dd-`hd-                     .h--
+ ys-sy+.`         +     `    `      -+/-`    .ydMmddhhhhdmmddmNmmy  :/ od+                       +m:
+-:+do`           .ds/.            `:-`      `::-hMmddhy+::y+yddddd/   -ds`                       `dN
+-sdd              sdds   .        `             .dMNmdddhydddddddho-  -s`                         `s
+y+.oy`            :dddo-+h-                    `dMMMMMNmdddddsoss:.s-  `                            
+`-sNh/`     `     .ddddhdds`..-:                sNMNmMNNyhhds``.: /yy                               
+hmy/``/   ``:      dddddydhshhdh`               .mNNNNmNo..-.``.`:dy.                               
+M+    --  `:+      sdddddhhooyy/`               `mmMMMmNN.      -hd+/                               
+N      :   .y:     `+yhdddhyyho.                +hdmMMNNN/     :hdh/`                               
+N      `+   :s  `    `-ohdhdh+-`     +:. -   `---./ymmdmdo   .smdy/                                 
+N    `-`:-   +  `       `:so. .`    -+// -o:`:/`   -o:-ooy.-/dd/-`                                  
+:      .`o   ``            .:-`    `yh++:`yo.`     :-`   oyyy:`                                     
+        -y. `                ``   -ssdddo.`+hss-   /--   -:.                                        
+         /+ y-`                  `+ooddy.-/.o//.   o.`                                        `     
+          /``                      /hddh/.`.+:   - :                                          -     
+                                 .sddddd--:: `                                                :     
+     :`                         /hdddddds:-`                                                 --     
+    :sy                       `sddddddo:.           `                    `s:                 o      
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+ 
+Me cago en la leche, merche. Nos ha salio' hacker el niño.
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+Llegar hasta aquí tiene su mérito, por ello, conforme avance la cuenta se irán desvelando detalles en este cajón oculto. Estad atentos ;-)
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+-->
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+  <title>Forocoches.club | Todo va a cambiar</title>
+  <meta name="description" content="Todo va a cambiar.">
+  <link rel="icon" 
+      type="image/png" 
+      href="img/shurperro.png">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+  <link rel="stylesheet" href="css/styles.css"> 
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/scripts.js"></script>
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+  <meta property="og:image" content="http://forocoches.club/img/shurperro-social.jpg"/>
+  <meta property="og:title" content="Todo va a cambiar"/>
+  <meta property="og:description" content="Comienza la cuenta atrás." />
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Todo va a cambiar." />
+  <meta name="twitter:description" content="Comienza la cuenta atrás." />
+  <meta name="twitter:image" content="http://forocoches.club/img/shurperro-social.jpg" />
+</head>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<body>
+  <div class="container">
+    <div class="container-content">
+    <div class="counter">
+    <h1 class="cent">Todo va a cambiar</h1>
+    <div class="time cent">
+      <div class="days"><number>00</number><label>días</label></div>
+      <div class="hours"><number>00</number><label>horas</label></div>
+      <div class="minutes"><number>00</number><label>minutos</label></div>
+      <div class="seconds"><number>00</number><label>segundos</label></div>
+    </div>
+    <div class="cent">
+      <ul class="share">
+          <li onclick="share_twitter()"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDExMi4xOTcgMTEyLjE5NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTEyLjE5NyAxMTIuMTk3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiM1NUFDRUU7IiBjeD0iNTYuMDk5IiBjeT0iNTYuMDk4IiByPSI1Ni4wOTgiLz4KCTxnPgoJCTxwYXRoIHN0eWxlPSJmaWxsOiNGMUYyRjI7IiBkPSJNOTAuNDYxLDQwLjMxNmMtMi40MDQsMS4wNjYtNC45OSwxLjc4Ny03LjcwMiwyLjEwOWMyLjc2OS0xLjY1OSw0Ljg5NC00LjI4NCw1Ljg5Ny03LjQxNyAgICBjLTIuNTkxLDEuNTM3LTUuNDYyLDIuNjUyLTguNTE1LDMuMjUzYy0yLjQ0Ni0yLjYwNS01LjkzMS00LjIzMy05Ljc5LTQuMjMzYy03LjQwNCwwLTEzLjQwOSw2LjAwNS0xMy40MDksMTMuNDA5ICAgIGMwLDEuMDUxLDAuMTE5LDIuMDc0LDAuMzQ5LDMuMDU2Yy0xMS4xNDQtMC41NTktMjEuMDI1LTUuODk3LTI3LjYzOS0xNC4wMTJjLTEuMTU0LDEuOTgtMS44MTYsNC4yODUtMS44MTYsNi43NDIgICAgYzAsNC42NTEsMi4zNjksOC43NTcsNS45NjUsMTEuMTYxYy0yLjE5Ny0wLjA2OS00LjI2Ni0wLjY3Mi02LjA3My0xLjY3OWMtMC4wMDEsMC4wNTctMC4wMDEsMC4xMTQtMC4wMDEsMC4xNyAgICBjMCw2LjQ5Nyw0LjYyNCwxMS45MTYsMTAuNzU3LDEzLjE0N2MtMS4xMjQsMC4zMDgtMi4zMTEsMC40NzEtMy41MzIsMC40NzFjLTAuODY2LDAtMS43MDUtMC4wODMtMi41MjMtMC4yMzkgICAgYzEuNzA2LDUuMzI2LDYuNjU3LDkuMjAzLDEyLjUyNiw5LjMxMmMtNC41OSwzLjU5Ny0xMC4zNzEsNS43NC0xNi42NTUsNS43NGMtMS4wOCwwLTIuMTUtMC4wNjMtMy4xOTctMC4xODggICAgYzUuOTMxLDMuODA2LDEyLjk4MSw2LjAyNSwyMC41NTMsNi4wMjVjMjQuNjY0LDAsMzguMTUyLTIwLjQzMiwzOC4xNTItMzguMTUzYzAtMC41ODEtMC4wMTMtMS4xNi0wLjAzOS0xLjczNCAgICBDODYuMzkxLDQ1LjM2Niw4OC42NjQsNDMuMDA1LDkwLjQ2MSw0MC4zMTZMOTAuNDYxLDQwLjMxNnoiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></li>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/fcclub/forocoches.club">Forocoches.club</a> is maintained by <a href="https://github.com/fcclub">fcclub</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+          <li onclick="share_facebook()"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyOTEuMzE5IDI5MS4zMTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5MS4zMTkgMjkxLjMxOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6IzNCNTk5ODsiIGQ9Ik0xNDUuNjU5LDBjODAuNDUsMCwxNDUuNjYsNjUuMjE5LDE0NS42NiwxNDUuNjZjMCw4MC40NS02NS4yMSwxNDUuNjU5LTE0NS42NiwxNDUuNjU5ICAgUzAsMjI2LjEwOSwwLDE0NS42NkMwLDY1LjIxOSw2NS4yMSwwLDE0NS42NTksMHoiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTYzLjM5NCwxMDAuMjc3aDE4Ljc3MnYtMjcuNzNoLTIyLjA2N3YwLjFjLTI2LjczOCwwLjk0Ny0zMi4yMTgsMTUuOTc3LTMyLjcwMSwzMS43NjNoLTAuMDU1ICAgdjEzLjg0N2gtMTguMjA3djI3LjE1NmgxOC4yMDd2NzIuNzkzaDI3LjQzOXYtNzIuNzkzaDIyLjQ3N2w0LjM0Mi0yNy4xNTZoLTI2Ljgxdi04LjM2NiAgIEMxNTQuNzkxLDEwNC41NTYsMTU4LjM0MSwxMDAuMjc3LDE2My4zOTQsMTAwLjI3N3oiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
 </html>
